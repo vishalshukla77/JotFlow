@@ -19,7 +19,7 @@ const Collections = ({ collections = [], entriesByCollection }) => {
   useEffect(() => {
     if (createdCollection) {
       setIsCollectionDialogOpen(false);
-      fetchCollections(); // Refresh collections list
+     
       toast.success(`Collection ${createdCollection.name} created!`);
     }
 
